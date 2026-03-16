@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Code Camp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve this platform!</p>
+    <form id="survey-form">
+      <label id="name-label" for="full-name">Name (required):</label>
+      <input id="name" type="text" name="name" placeholder="e.g. Jane Smith" required />
+      <label id="email-label" for="email">Email (required):</label>
+      <input id="email" type="email" name="email" placeholder="example@email.com" required />
+      <label id="number-label" for="age">Age (optional):</label>
+      <input id="number" type="number" name="age" placeholder="Age" min="10" max="95">
+    <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role">
+        <option selected disabled value="select-current-role">Select Current Role</option>
+        <option value="student">Student</option>
+        <option value="full-time-job">Full Time Job</option>
+        <option value="full-time-learner">Full Time Learner</option>
+        <option value="prefer-not-to-say">Prefer not to say</option>
+        <option value="other">Other</option>  
+      </select>
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+      <input checked type="radio" id="definitely-option" name="recommendation" value="definitely" />
+      <label for="definitely-option">Definitely</label>
+      <input type="radio" id="maybe-option" name="recommendation" value="maybe" />
+      <label for="maybe-option">Maybe</label>
+      <input type="radio" id="not-sure-option" name="recommendation" value="maybe" />
+      <label for="not-sure-option">Not sure</label>
+    <p>What is your favorite feature of freeCodeCamp?</p>
+      <select id="dropdown" name="feature">
+        <option selected disabled value="select-current-role">Select Current Role</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="open-source">Open Source</option>
+      </select>
+    <p>What would you like to see improved? (Check all that apply)</p>
+      <input type="checkbox" id="checked" name="checked" value="checked">
+      <label for="front-end-projects">Front-end Projects</label>
+      <input type="checkbox" id="checked" name="checked" value="checked">
+      <label for="back-end-projects">Back-end Projects</label>
+      <input type="checkbox" id="checked" name="checked" value="checked">
+      <label for="data-visualization">Data Visualization</label>
+      <input type="checkbox" id="checked" name="checked" value="checked">
+      <label for="challenges">Challenges</label>
+      <input type="checkbox" id="checked" name="checked" value="checked">
+      <label for="open-source-community">Open Source Community</label>
+      <input type="checkbox" id="checked" name="checked" value="checked">
+      <label for="videos">Videos</label>
+    <p>Any comments or suggestions?</p>
+      <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
+      <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
