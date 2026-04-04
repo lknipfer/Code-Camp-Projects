@@ -1,0 +1,50 @@
+body {
+  background-color: azure;
+}
+
+.blog-post-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  text-alignment: center; 
+}
+
+.post-img {
+  max-width: 100%;
+  border-bottom: 5px solid black;
+}
+
+.post-content {
+  padding: 30px;
+}
+
+.post-title {
+  color: dimgrey;
+  margin: 10px;
+  text-align: center;
+  font-family: monospace; 
+}
+
+.post-excerpt {
+  color: dimgrey;
+  margin: 20px;
+  text-align: center;
+  font-family: monospace;
+}
+
+.read-more {
+  color: white;
+  background-color: midnightblue;
+  margin: 75px;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  font-family: monospace;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: grey;
+}
